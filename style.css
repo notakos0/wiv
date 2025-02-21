@@ -1,0 +1,318 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: black;
+    width: 100%;
+}
+
+.button {
+    background: none;
+    padding: 10px;
+    padding-inline: 30px;
+    margin: 5px;
+    font-size: 1rem;
+    background-color: rgb(0, 153, 255);
+    border: 3px solid rgb(0, 153, 255);
+    border-radius: 10px;
+    transition: all ease-in-out 0.3s;
+}
+
+.button:hover {
+    background-color: rgb(0, 78, 131);
+}
+
+.wellcome {
+    /*background-color: rgb(58, 58, 58);*/
+    padding-inline: 100px;
+    padding-top: 300px;
+    background-image: url('bg.png');
+    background-position: center;
+    height: 100vh;
+}
+
+.need {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.navbar {
+    backdrop-filter: blur(10px);
+    border: 3px solid rgb(19, 19, 19);
+    box-shadow: 0 0 40px 6px black;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 30px;
+    margin-bottom: 10vh;
+    position: fixed;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.navbcon {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.navbu {
+    background: none;
+    margin: 10px;
+    border: none;
+    font-size: large;
+    transition: all ease-in-out 0.2s;
+    text-shadow: 0 0 5px rgb(255, 255, 255);
+}
+
+.navbu:hover {
+    color: rgb(0, 153, 255);
+    text-shadow: 0 0 5px rgb(0, 153, 255);
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: white;
+    text-shadow: 0 0 5px rgb(255, 255, 255);
+}
+
+.colortext {
+    color: rgb(0, 153, 255);
+    text-shadow: 0 0 5px rgb(0, 153, 255);
+}
+
+h1 {font-size: 4rem;}
+h2 {font-size: 3rem;}
+h3 {font-size: 2rem;}
+h4 {font-size: 1.5rem;}
+h5 {font-size: 1rem;}
+
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 50px;
+    background-color: black;
+    border-top: 3px solid rgb(0, 153, 255);
+}
+
+.foo {
+    text-align: center;
+}
+
+.space1 {height: 100px;}
+.space2 {height: 200px;}
+.space3 {height: 300px;}
+
+
+.cen {
+    text-align: center;
+}
+
+a {
+    color: rgb(0, 153, 255);
+    text-decoration: underline;
+}
+
+.arrow {
+    text-shadow: 0 0 5px white;
+    cursor: default;
+}
+
+
+#rolam {
+    box-shadow: 0 0 100px 70px black;
+    padding-top: 100px;
+    padding-inline: 50px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+.boxcon {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.box {
+    width: 400px;
+    height: 300px;
+    min-height: fit-content;
+    background-color: rgb(0, 24, 59);
+    margin: 50px;
+    border: 3px solid rgb(0, 153, 255);
+    border-radius: 10px;
+    text-align: left;
+    padding: 20px;
+    transition: all ease-in-out 0.2s;
+}
+
+/*.box:hover {
+    box-shadow: 0 0 10px 4px rgb(0, 153, 255);
+}*/
+
+.boxtitle {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+.boximg {
+    width: 3rem;
+    height: 3rem;
+    margin-right: 15px;
+    margin-bottom: 20px;
+}
+
+#kapcsolat {
+    padding-top: 100px;
+    padding-inline: 50px;
+    padding-bottom: 100px;
+    text-align: center;
+    background-color: rgb(0, 24, 59);
+}
+
+.kapcs-con {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.kapcs-con2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#wsup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 70px;
+}
+
+.progress-container {
+    width: 50%;
+    margin: 50px;
+}
+
+.progress-bar {
+    width: 100%;
+    background-color: #333;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.progress {
+    height: 20px;
+    background-color: rgb(0, 153, 255);
+    text-align: center;
+    line-height: 20px;
+    color: white;
+}
+
+#rf {
+    background-color: rgb(0, 24, 59);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 70px;
+}
+
+@media screen and (max-width: 1200px) {
+    
+    .navbcon {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        right: 30px;
+        background: rgba(0, 0, 0, 0.8);
+        border-radius: 10px;
+        padding: 10px;
+        box-shadow: 0 0 10px black;
+    }
+
+    .navbcon.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+    
+    .wellcome {
+        padding-inline: 50px;
+    }
+
+    .boxcon {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .box {
+        width: 80vw;
+        margin-inline: 0;
+    }
+
+    .kapcs-con {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .kapcs-box {
+        margin-block: 20px;
+    }
+
+    .progress-container {
+        width: 75%;
+    }
+}
+
+
+@media screen and (max-width:  600px) {
+    .wellcome {
+        padding-inline: 20px;
+    }
+
+    .boxcon {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .box {
+        width: 80vw;
+        margin-inline: 0;
+    }
+
+    .kapcs-con {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #rolam {
+        padding-inline: 5%;
+    }
+
+    #wsup {
+        margin: 10px;
+    }
+
+    .progress-container {
+        width: 90%;
+    }
+}

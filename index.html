@@ -1,9 +1,118 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Hamarosan...</title>
-  </head>
-  <body>
-    <h1>Hamarosan...</h1>
-  </body>
+    <head>
+        <title>WIVTRICK's official website</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="need">
+            <div class="navbar">
+                <div>
+                    <h3 class="colortext">WIVTRICK</h3>
+                    <h5 class="colortext">Official website</h5>
+                </div>
+                <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+                <div class="navbcon">
+                    <button class="navbu" onclick="toHome()">Kezdőlap</button>
+                    <button class="navbu" onclick="toRolam()">Rólam</button>
+                    <button class="navbu" onclick="toKapcsolat()">Kapcsolat</button>
+                    <button class="navbu" onclick="toWsup()">Mit-csinálok</button>
+                </div>
+            </div>
+        </div>
+        <div id="home" class="wellcome">
+            <div>
+                <div>
+                    <h1 class="cen">Welcome!</h1>
+                    <h5 class="cen">WIVTRICK vagyok, mindennel foglalkozok ami informatika, vagy a tájékán van.</h5>
+                    <h5 class="cen">De ha ki kéne emelnem valamit akkor az a programozás és a videóvágás lenne.</h5>
+                    <h5 class="cen">Mostanában belevágtam a tartalomgyártásba is.</h5>
+                    <div class="space3"></div>
+                    <h3 class="cen arrow" onclick="toRolam()">\/</h3>
+                    <div class="space3"></div>
+                </div>
+            </div>
+        </div>
+        <div id="rolam">
+            <h1>Rólam</h1>
+            <div class="boxcon">
+                <div class="box">
+                    <div class="boxtitle">
+                        <img class="boximg" src="ico/terminal.png">
+                        <h3>Fejlesztő</h3>
+                    </div>
+                    <p>A programozás majdnem minden sarkába belekukkantottam már, de legfőképpen a weboldalakat fejlesztek (inkább frontend). A játékfejlesztés is egy nagyobb kategória (Unity - C#) viszont azt most szüneteltetem. A minecrafton belül a plugin írásban is benne vagyok, bár nem túl nagy szineten. Ha kíváncsi vagy a munkáimra lesd meg a fejlesztői weboldalamat: <a href="https://notakos.hu">https://notakos.hu</a> (Igaz nem sokat publikáltam)</p>
+                </div>
+                <div class="box">
+                    <div class="boxtitle">
+                        <img class="boximg" src="ico/film.png">
+                        <h3>Vágó</h3>
+                    </div>
+                    <p>Már pár éve a videóvágásban is eléggé benne vagyok, Wondershare Filmora-val kezdtem, jelenleg DaVinci Resolve-ban vágok. Lényegében bármit vágás terén szívesen válalok munkákat is. Tervezek belevágni a tartalomgyártói karrierbe is, főként YouTub-on videók formájában.</p>
+                </div>
+                <div class="box">
+                    <div class="boxtitle">
+                        <img class="boximg" src="ico/gamepad.png">
+                        <h3>Játékos</h3>
+                    </div>
+                    <p>A videójátékok nagy szenvedélyem. Legfőképpen a Minecraft, bár próbáltam már sok más FPS-t és egyebet. Ugyan telefonon kezdtem, de mára kizárólag gépen szoktam játszani. A Minecraft terén már több szerverem is volt, legutobbi a GGPlanet anarchy szerver volt. Vanilla anarchy volt, tehát nem voltak szabályok, lehetett csalni, csak egy minimális anticheat működött. Ebből lett a <a href="https://ggplanet.hu">GGPlanet</a> közösség.</p>
+                </div>
+            </div>
+        </div>
+        <div id="kapcsolat">
+            <div class="kapcs-con">
+                <div class="kapcs-box">
+                    <h4>GGPlanet discord közösség</h4>
+                    <button class="button">Csatlakozás!</button>
+                </div>
+                <div class="kapcs-box">
+                    <h4>Youtube csatornám</h4>
+                    <button class="button">Megtakintés!</button>
+                </div>
+                <div class="kapcs-box">
+                    <h4>Tiktok oldalam</h4>
+                    <button class="button">Megtakintés!</button>
+                </div>
+                <div class="kapcs-box">
+                    <h4>Fejlesztői portál</h4>
+                    <button class="button">Megtekintés!</button>
+                </div>
+                <div class="kapcs-box">
+                    <h4>E-mail</h4>
+                    <button class="button">Levélírás!</button>
+                </div>
+            </div>
+        </div>
+        <div id="wsup" style="background-color: black; padding: 20px;">
+            <h2 style="color: white; text-align: center;">Mit csinálok éppen?</h2>
+            <h5>Itt láthatod, hogy mostanában miket csinálok. Erre szükség van, mert rengeteg dologgal foglalkozom.</h5>
+            <div class="progress-container">
+                <h4 style="color: white;">Videóvágás</h4>
+                <div class="progress-bar"><div class="progress" style="width: 45%;"></div></div>
+                <h4 style="color: white;">Gaming</h4>
+                <div class="progress-bar"><div class="progress" style="width: 50%;"></div></div>
+                <h4 style="color: white;">Webfejlesztés:</h4>
+                <div class="progress-bar"><div class="progress" style="width: 40%;"></div></div>
+                <h4 style="color: white;">Játékfejlesztés:</h4>
+                <div class="progress-bar"><div class="progress" style="width: 5%;"></div></div>
+                <h4 style="color: white;">Egyéb projektek:</h4>
+                <div class="progress-bar"><div class="progress" style="width: 25%;"></div></div>
+            </div>
+        </div>
+        <div id="rf">
+            <h3>Ez ennyi volna...</h3>
+            <h3>Ha érdekel még valami keress meg bátran!</h3>
+            <p><em>Vágói munkát vállalok!</em></p>
+        </div>
+        <div class="footer">
+            <div class="foo">
+                <h5>WIVTRICK's official website</h5>
+                <p>Nincsen semmi fenntartva lol</p>
+            </div>
+        </div>
+    </body>
+    <script src="script.js"></script>
+    <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="wivtrick" data-description="Support me on Buy me a coffee!" data-message="" data-color="#5F7FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
 </html>
